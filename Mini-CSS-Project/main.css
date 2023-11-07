@@ -1,0 +1,58 @@
+main{
+    border-bottom: 10px solid #222222;
+}
+
+main section{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-top: 10px solid #222222;
+   padding: 50px 0px 20px 0px;
+    
+}
+
+section article h2{
+    font-size: 38px;
+}
+
+.enjoy-article,  .download-article , .watch{
+    max-width: 500px;
+    
+}
+
+main section article p{
+    font-size: 23px;
+}
+.download-article{
+    order: 1;
+}
+
+@media all and (max-width:900px){
+    main section{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media all and (max-width:700px){
+    img{
+        max-width: 300px;
+    }
+    main section article p{
+        font-size: 16px;
+    }
+    section article h2{
+        font-size: 24px;
+    }
+    section-two-main{
+        flex-direction: column-reverse;
+    }
+    section{
+        text-align: center;
+    }
+    .enjoy-article,  .download-article , .watch{
+        max-width: 400px;
+        
+    }
+
+}

@@ -1,0 +1,114 @@
+.header {
+  background-image: url(/assets/bg.jpg);
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(/assets/bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  min-height: 75vh;
+}
+
+.logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+}
+
+.logo img {
+  max-width: 180px;
+}
+
+.logo button {
+  padding: 5px 14px;
+  border: none;
+  background-color: #e50914;
+  color: white;
+  font-size: 18px;
+  border-radius: 5px;
+}
+.header button a{
+    color:white;
+    text-decoration: none;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.description h1 {
+  font-size: 65px;
+  width: 45%;
+  text-align: center;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.description h3{
+    font-size: 30px;
+    margin-top: 16px;
+}
+
+.header input{
+    height: 40px;
+    width: 350px;
+    font-size: 16px;
+}
+.header-cta{
+    display: flex
+}
+.header-cta button{
+    width: 250px;
+    font-size: 24px;
+    padding: 4px;
+    border: none;
+    background-color: #e50914;
+    color: white;
+}
+
+.ready{
+    margin-top: 0px;
+
+}
+
+@media all and (max-width: 900px){
+    .description h1{
+        font-size: 30px;
+    }
+    .description h3{
+        font-size: 18px;
+    }
+    .header p{
+        font-size: 12px;
+    }
+  
+}
+
+@media all and (max-width: 600px){
+    .header-cta{
+        flex-direction: column;
+        align-items: center;
+    }
+    .description h1 {
+       
+        width: 90%;
+    }
+  
+    .header input{
+        height: 40px;
+        width:270px;
+        font-size: 14px;
+    }
+    .header-cta button{
+    width: 166px;
+    font-size: 17px;
+    border-radius: 5px;
+    margin-top: 20px
+}
+.logo{
+    padding: 0;
+}
+}
